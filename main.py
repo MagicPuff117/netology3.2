@@ -11,11 +11,13 @@ def translate_file(name):
     # name_of_file = os.path.join(input('Введите имя файла'))
     with open(name, 'r', encoding='utf-8') as f:
         content = f.read()
+    language_choice = input('C какого языка вы хотите перевести?:')
+
 
     params = {
         'key': API_KEY,
         'text': content,
-        'lang': 'ru'
+        'lang': '{}-ru'.format(language_choice) # Язык на который надо перевести
     }
     final_name = os.path.join(input('Введите название переведенного файла:'))
     with open(final_name, 'w', encoding='utf-8') as file:
