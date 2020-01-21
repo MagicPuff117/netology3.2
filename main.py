@@ -39,9 +39,9 @@ def main():
         if name == os.path.join('DE.txt'):
             translate_file('DE.txt','DE_tran.txt','de')
         elif name == os.path.join('ES.txt'):
-            translate_file('ES.txt','ES_tran.txt','de')
+            translate_file('ES.txt','ES_tran.txt','es')
         elif name == os.path.join('FR.txt'):
-            translate_file('FR.txt','FR_tran.txt','de')
+            translate_file('FR.txt','FR_tran.txt','fr')
         else:
             print('Неккоректный ввод, поторите')
         print('Конец программы')
